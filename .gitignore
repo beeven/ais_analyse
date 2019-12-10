@@ -7,3 +7,5 @@ Pipfile.lock
 lib/
 bin/
 include/
+Scripts/
+pyvenv.cfg
