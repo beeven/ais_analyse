@@ -44,8 +44,11 @@ def generate_ais_locations(path):
         if d is None:
             print("msg as_dict is None: {0}".format(msg))
         if d['type'] == 4:
-            station_datetime = datetime.datetime(d['year'], d['month'], d['day'], d['hour'], d['minute'], d['second'],tzinfo=timezone.utc)
-            print(station_datetime)
+            try:
+                station_datetime = datetime.datetime(d['year'], d['month'], d['day'], d['hour'], d['minute'], d['second'],tzinfo=timezone.utc)
+                print(station_datetime)
+            except Exception as ex:
+                print(ex, file=sys.stderr)
             continue
         elif d['type'] in (1,2,3):#d['mmsi'] == '412000000' and d['type'] != 24:
             print(d)
@@ -56,6 +59,7 @@ def generate_ais_locations(path):
             yield { 'timestamp': time,'mmsi':d['mmsi'], 'latitude': d['lat'], 'longitude': d['lon']}
         else:
             print(d)
+        
 
 def generate_nmea_stream(path):
     with open(path, 'r', encoding="utf-8-sig") as f:

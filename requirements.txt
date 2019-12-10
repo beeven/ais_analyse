@@ -1,0 +1,8 @@
+bitstring==3.1.6
+Click==7.0
+numpy==1.17.4
+pynmea2==1.15.0
+python-dateutil==2.8.1
+simpleais==0.7.1
+six==1.13.0
+testfixtures==6.10.3
