@@ -1,6 +1,0 @@
-<?xml version='1.0' encoding='utf-8'?>
-<kml xmlns="http://www.opengis.net/kml/2.2"><Document><name>AIS</name><Style id="yellowLineGreenPoly"><LineStyle><color>7fff00ff</color><width>4</width></LineStyle><PolyStyle><color>7f00ff00</color></PolyStyle></Style><Placemark><name>Criterion</name><styleUrl>#yellowLineGreenPoly</styleUrl><LineString><tessellate>1</tessellate><coordinates>113.836,22.5,1
-113.836,22.5284,1
-113.859,22.5284,1
-113.859,22.5,1
-113.836,22.5,1</coordinates></LineString></Placemark></Document></kml>
