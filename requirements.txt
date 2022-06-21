@@ -1,6 +1,6 @@
 bitstring==3.1.6
 Click==7.0
-numpy==1.17.4
+numpy==1.22.0
 pynmea2==1.15.0
 python-dateutil==2.8.1
 simpleais==0.7.1
